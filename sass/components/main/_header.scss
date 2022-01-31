@@ -1,0 +1,151 @@
+.header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* --Стилизация слова WebStudio-- */
+
+.header__name {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 93px;
+}
+
+.web {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+/* --Стилизация меню навигации-- */
+
+.navigation__list {
+    display: flex;
+}
+
+.navigation__studio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-right: 50px;
+    transition: color var(--transition);
+    &:hover, &:focus {
+        color: var(--main-color);
+    }
+}
+
+.navigation__portfolio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-right: 50px;
+    transition:  color var(--transition);
+    &:hover, &:focus {
+        color: var(--main-color);
+    }   
+}
+
+.navigation__contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color var(--transition);
+    &:hover, &:focus {
+        color: var(--main-color);
+    }
+}
+
+.current { 
+    color: var(--main-color);
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: var(--main-color);
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+    }
+}
+
+.contact {
+    display: flex;
+    margin-left: 215px;
+    margin-right: auto;
+}
+
+.contact__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__icon {
+    margin-right: 10px;
+}
+
+.envelope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--grey-color);
+    transition: fill var(--transition);
+    &:hover, &:focus {
+        fill: var(--main-color);
+    }
+    
+}
+
+/* --Стилизация контактов хедера-- */
+
+.contact__mail {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-color);
+    margin-right: 50px;
+    transition: color var(--transition);
+    &:hover, &:focus {
+        color: var(--main-color);
+    }
+}
+
+.contact__tel {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-color);
+    transition: color var(--transition);
+    &:hover, &:focus {
+        color: var(--main-color);
+    }
+}

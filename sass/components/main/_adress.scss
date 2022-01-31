@@ -1,0 +1,47 @@
+.footer__name {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.adress {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.adress__list {
+    min-width: 231px;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.adress__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.adress__placing {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    &:visited {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.adress__contact {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

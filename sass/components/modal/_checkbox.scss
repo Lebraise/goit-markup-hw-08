@@ -1,0 +1,42 @@
+
+.check-text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    & span {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+        border: 2px solid var(--text-color);
+        border-radius: 2px;;
+    }
+}
+
+.check-terms {
+    text-decoration-line: underline;
+    color: var(--main-color);
+    margin-left: 3px;
+}
+
+.check-icon {
+    fill: transparent;
+}
+
+.checkbox:checked + .check-text span {
+    border: none;
+    background-color: var(--main-color);
+}
+
+.checkbox:checked + .check-text .check-icon {
+    border: none;
+    fill: #ffffff;
+}
