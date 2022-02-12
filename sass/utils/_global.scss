@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
     align-items: center;
@@ -29,9 +29,9 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  .main__title {
+.main__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;

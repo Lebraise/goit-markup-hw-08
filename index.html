@@ -16,40 +16,91 @@
     <header class="header">
         <div class="container header__container">
             <a class="link header__name" href="./index.html"><span class="web">Web</span>Studio</a>
-            <!-- Меню навигации -->
-            <nav class="navigation">
-                <ul class="list navigation__list">               
-                    <li>
-                        <a class="link navigation__studio current" href="./index.html">Студия</a>
+            <div class="header__content">
+                <div>
+                    <nav class="navigation">
+                        <ul class="list navigation__list">               
+                            <li>
+                                <a class="link navigation__studio current" href="./index.html">Студия</a>
+                            </li>
+                            <li>
+                                <a class="link navigation__portfolio" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li>
+                                <a class="link navigation__contacts" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <ul class="list contact">
+                        <li class="contact__item">
+                            <a class="link contact__mail envelope" href="mailto:info@devstudio.com">
+                                <svg class="contact__icon" width="16" height="12">
+                                    <use href="images/icons.svg#icon-envelope">
+                                    </use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="link contact__tel envelope" href="tel:+380961111111">
+                                <svg class="contact__icon" width="10" height="16">
+                                    <use href="images/icons.svg#icon-smartphone">
+                                    </use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="mob-menu__btn--open" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- Меню-->
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="mob-menu__btn--close" data-menu-close>
+                <svg width="40" height="40">
+                    <use href="images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <div class="mob-menu__top">
+                <nav class="navigation">
+                    <ul class="list navigation__list">               
+                        <li>
+                            <a class="link navigation__studio current" href="./index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a class="link navigation__portfolio" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="link navigation__contacts" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mob-menu__bot">
+                <ul class="list contact">
+                    <li class="contact__item">
+                        <a class="link contact__mail envelope" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
                     </li>
-                    <li>
-                        <a class="link navigation__portfolio" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li>
-                        <a class="link navigation__contacts" href="">Контакты</a>
+                    <li class="contact__item">
+                        <a class="link contact__tel envelope" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="list contact">
-                <li class="contact__item">
-                    <a class="link contact__mail envelope" href="mailto:info@devstudio.com">
-                        <svg class="contact__icon" width="16" height="12">
-                            <use href="images/icons.svg#icon-envelope">
-                            </use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="contact__item">
-                    <a class="link contact__tel envelope" href="tel:+380961111111">
-                        <svg class="contact__icon" width="10" height="16">
-                            <use href="images/icons.svg#icon-smartphone">
-                            </use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div> 
+                <ul class="mob-menu__socials">
+                    <li lang="en" class="list mob-menu__socials-item"><a href="" class="mob-menu__socials-link">Instagram</a></li>
+                    <li lang="en" class="list mob-menu__socials-item"><a href="" class="mob-menu__socials-link">Twitter</a></li>
+                    <li lang="en" class="list mob-menu__socials-item"><a href="" class="mob-menu__socials-link">Facebook</a></li>
+                    <li lang="en" class="list mob-menu__socials-item"><a href="" class="mob-menu__socials-link">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <!-- Шапка сайта -->
-    <!-- <main> -->
+    <main>
         <!-- Заказ услуги -->
         <section class="hero hero__section">
             <div class="container">
@@ -69,7 +120,7 @@
                             </svg>
                         </div>
                         <h3 class="feature__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                        <p class="feature__description">Идейные соображения, а также <br>начало повседневной работы по <br>формированию позиции.</p>
+                        <p class="feature__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="feature__item">
                         <div class="feature__bar">
@@ -78,7 +129,7 @@
                             </svg>
                         </div>
                         <h3 class="feature__title">ПУНКТУАЛЬНОСТЬ</h3>
-                        <p class="feature__description">Задача организации, в особенности <br>же рамки и место обучения кадров <br>влечет за собой.</p>
+                        <p class="feature__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>       
                     <li class="feature__item">
                         <div class="feature__bar">
@@ -87,7 +138,7 @@
                             </svg>
                         </div>
                         <h3 class="feature__title">ПЛАНИРОВАНИЕ</h3>
-                        <p class="feature__description">Равным образом консультация с <br>широким активом в значительной <br>степени обуславливает.</p>
+                        <p class="feature__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li> 
                     <li class="feature__item">
                         <div class="feature__bar">
@@ -96,13 +147,13 @@
                             </svg>
                         </div>
                         <h3 class="feature__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                        <p class="feature__description">Значимость этих проблем настолько <br>очевидна, что реализация плановых <br>заданий.</p>
+                        <p class="feature__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- Информация о работе в фото -->
-        <section class="section">
+        <section class="section hide-work">
             <div class="container">
                 <h2 class="main__title">Чем мы занимаемся</h2>
                 <ul class="list work">
@@ -149,7 +200,7 @@
             </div>           
         </section>
         <!-- Команда -->
-            <section class="section team">
+            <!-- <section class="section team">
                 <div class="container">
                     <h2 class="main__title">Наша команда</h2>
                     <ul class="list team__list">
@@ -395,9 +446,9 @@
                         </li>  
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <!-- Клиенты -->
-            <section class="section">
+            <!-- <section class="section">
                 <div class="container">
                     <h2 class="main__title">Постоянные клиенты</h2>
                     <ul class="list company">
@@ -446,12 +497,12 @@
                     </ul>
                 </div>
             </section>
-    </main>
+    </main> -->
     <!-- Подвал сайта -->
-    <footer class="footer">
-        <div class="footer-main-div">
+    <!-- <footer class="footer">-->
+        <!-- <div class="footer-main-div"> -->
             <!-- Адрес студии -->
-            <div>
+            <!-- <div>
             <a class="link footer__name" href="./index.html"><span class="web">Web</span>Studio</a>
             <address class="adress">
                 <ul class="list adress__list">
@@ -466,9 +517,9 @@
                     </li>
                 </ul>
             </address>
-            </div>
+            </div> -->
             <!-- Ссылки с иконками соцсетей -->
-            <div class="socials">
+            <!-- <div class="socials">
                 <h2 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
                 <ul class="socials__list">
                     <li class="list socials__item">
@@ -504,9 +555,9 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- Инпут с кнопкой для подписки -->
-            <form action="#">
+            <!-- <form action="#">
                 <div class="mailing">
                     <label class="footer__title" for="mailing__input">Подпишитесь на рассылку</label>
                     <div class="mailing__bar">
@@ -529,7 +580,7 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> -->
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -625,5 +676,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

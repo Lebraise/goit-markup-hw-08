@@ -21,6 +21,9 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    @include tablet {
+        visibility: visible;
+    }
 }
 
 .backdrop.is-hidden .modal {

@@ -1,3 +1,15 @@
+.hide-work {
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: contents;
+    }
+}
+
 .work {
     display: flex;
     flex-wrap: wrap;
