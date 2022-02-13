@@ -12,30 +12,44 @@
 
 .work {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: center;
-    padding-left: 0; 
+    padding-left: 0;
+    @include desktop {
+        margin-bottom: 94px;
+    }
 }
 
 .work__item {
-    position: relative;
-    width: 370px;
+    width: 100%;
     height: 294px;
     &:not(:last-child) {
         margin-right: 30px;
     }
 }
-z
-.work__text {
+
+.work-item__bar {
+    @include desktop {
+    position: relative;
+    }
+}
+
+.work-item__box {
+    @include desktop {
     position: absolute;
     bottom: 0;
     left: 0;
     background: rgba(47, 48, 58, 0.8);
-    width: 370px;
+    width: 100%;
     min-height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    }
+    
+}
+
+.work__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

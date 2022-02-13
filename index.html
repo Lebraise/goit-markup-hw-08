@@ -158,49 +158,61 @@
                 <h2 class="main__title">Чем мы занимаемся</h2>
                 <ul class="list work">
                     <li class="work__item">
-                        <picture>
-                            <source
-                                srcset="
-                                ./images/work1-desk-x1.jpg x1,
-                                ./images/work1-desk-x2.jpg x2
-                                "
-                                media="(min-width: 1200px)"
-                            />
-                            <img src="./images/work1-desk-x1.jpg" alt="Фото чем мы занимаемся">
-                        </picture>
-                        <p class="work__text">Десктопные приложения</p>
+                        <div class="work-item__bar">
+                            <picture>
+                                <source
+                                    srcset="
+                                    ./images/work1-desk-x1.jpg x1,
+                                    ./images/work1-desk-x2.jpg x2
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img class="work-item__img" src="./images/work1-desk-x1.jpg" alt="Фото чем мы занимаемся">
+                            </picture>
+                            <div class="work-item__box">
+                                <p class="work__text">Десктопные приложения</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="work__item">
-                        <picture>
-                            <source
-                                srcset="
-                                ./images/work2-desk-x1.jpg x1,
-                                ./images/work2-desk-x2.jpg x2
-                                "
-                                media="(min-width: 1200px)"
-                            />
-                            <img src="./images/work2-desk-x1.jpg" alt="Фото чем мы занимаемся">
-                        </picture>
-                        <p class="work__text">Мобильные приложения</p>
+                        <div class="work-item__bar">
+                            <picture>
+                                <source
+                                    srcset="
+                                    ./images/work2-desk-x1.jpg x1,
+                                    ./images/work2-desk-x2.jpg x2
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img class="work-item__img" src="./images/work2-desk-x1.jpg" alt="Фото чем мы занимаемся">
+                            </picture>
+                            <div class="work-item__box">
+                                <p class="work__text">Мобильные приложения</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="work__item">
-                        <picture>
-                            <source
-                                srcset="
-                                ./images/work3-desk-x1.jpg x1,
-                                ./images/work3-desk-x2.jpg x2
-                                "
-                                media="(min-width: 1200px)"
-                            />
-                            <img src="./images/work3-desk-x1.jpg" alt="Фото чем мы занимаемся">
-                        </picture>
-                        <p class="work__text">Дизайнерские решения</p>
+                        <div class="work-item__bar">
+                            <picture>
+                                <source
+                                    srcset="
+                                    ./images/work3-desk-x1.jpg x1,
+                                    ./images/work3-desk-x2.jpg x2
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img class="work-item__img" src="./images/work3-desk-x1.jpg" alt="Фото чем мы занимаемся">
+                            </picture>
+                            <div class="work-item__box">
+                                <p class="work__text">Дизайнерские решения</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>           
         </section>
         <!-- Команда -->
-            <!-- <section class="section team">
+            <section class="section team">
                 <div class="container">
                     <h2 class="main__title">Наша команда</h2>
                     <ul class="list team__list">
@@ -225,9 +237,9 @@
                                     ./images/demianenko-mob-x1.jpg x1,
                                     ./images/demianenko-mob-x2.jpg x2
                                     "
-                                    media="(min-width: 480px)"
+                                    media="(min-width: 320px)"
                                 />
-                                <img src="./images/demianenko-desk-x1.jpg" alt="Фото члена нашей команды">
+                                <img class="team__img" src="./images/demianenko-desk-x1.jpg" alt="Фото члена нашей команды">
                             </picture>
                             <div class="members">
                                 <p class="members__name">Игорь Демьяненко</p>
@@ -285,9 +297,9 @@
                                     ./images/repina-mob-x1.jpg x1,
                                     ./images/repina-mob-x2.jpg x2
                                     "
-                                    media="(min-width: 480px)"
+                                    media="(min-width: 320px)"
                                 />
-                                <img src="./images/repina-desk-x1.jpg" alt="Фото члена нашей команды">
+                                <img class="team__img" src="./images/repina-desk-x1.jpg" alt="Фото члена нашей команды">
                             </picture>
                             <div class="members">
                                 <p class="members__name">Ольга Репина</p>
@@ -345,9 +357,9 @@
                                     ./images/tarasov-mob-x1.jpg x1,
                                     ./images/tarasov-mob-x2.jpg x2
                                     "
-                                    media="(min-width: 480px)"
+                                    media="(min-width: 320px)"
                                 />
-                                <img src="./images/tarasov-desk-x1.jpg" alt="Фото члена нашей команды">
+                                <img class="team__img" src="./images/tarasov-desk-x1.jpg" alt="Фото члена нашей команды">
                             </picture>
                             <div class="members">
                                 <p class="members__name">Николай Тарасов</p>
@@ -405,9 +417,9 @@
                                     ./images/ermakov-mob-x1.jpg x1,
                                     ./images/ermakov-mob-x2.jpg x2
                                     "
-                                    media="(min-width: 480px)"
+                                    media="(min-width: 320px)"
                                 />
-                                <img src="./images/ermakov-desk-x1.jpg" alt="Фото члена нашей команды">
+                                <img class="team__img" src="./images/ermakov-desk-x1.jpg" alt="Фото члена нашей команды">
                             </picture>
                             <div class="members">
                                 <p class="members__name">Михаил Ермаков</p>
@@ -446,7 +458,7 @@
                         </li>  
                     </ul>
                 </div>
-            </section> -->
+            </section>
             <!-- Клиенты -->
             <!-- <section class="section">
                 <div class="container">
