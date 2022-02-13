@@ -67,7 +67,7 @@ body {
           align-items: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 480px;
   }
@@ -1636,7 +1636,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.00;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--text-color);
   margin-bottom: 4px;
 }
@@ -1678,24 +1678,58 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: calc((100% - 60px) /3);
-      flex-basis: calc((100% - 60px) /3);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list {
+    -ms-flex-preferred-size: calc((100% - 30px)/2);
+        flex-basis: calc((100% - 30px)/2);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list {
+    -ms-flex-preferred-size: calc((100% - 60px)/3);
+        flex-basis: calc((100% - 60px)/3);
+  }
+}
+
+img {
+  width: 100%;
 }
 
 .project-item {
-  width: 370px;
+  width: 450px;
+  height: 100%;
   margin-bottom: 30px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
 
-.project-item:not(:nth-child(3n+3)) {
-  margin-right: 30px;
-}
-
 .project-item:hover .project-img-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .project-item {
+    width: 354px;
+  }
+  .project-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-item {
+    width: 370px;
+  }
+  .project-item:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+  }
 }
 
 .project-item-wrap {
@@ -1731,8 +1765,10 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .project-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 
 .project-box {
