@@ -1,11 +1,24 @@
 .socials {
-    margin-left: 70px;
+    // margin-left: 70px;
     padding-top: 0;
     padding-top: 15px;
+    @include tablet {
+        margin-bottom: 105px;
+        margin-left: 165px;
+        padding-top: 0;
+    }
+    @include desktop {
+        margin-bottom: 105px;
+        margin-left: 70px;
+        margin-right: 93px;
+        padding-top: 15px;
+    }
+    
 }
 
 .socials__list {
     display: flex;
+    justify-content: center;
 }
 
 .socials__item:not(:last-child) {
