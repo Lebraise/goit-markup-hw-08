@@ -33,6 +33,7 @@ a {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -59,7 +60,6 @@ body {
 
 .container {
   width: 100%;
-  min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
   -webkit-box-align: center;
@@ -67,7 +67,7 @@ body {
           align-items: center;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -685,6 +685,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -698,9 +701,6 @@ body {
   .hero__section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tab-x1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-x1.jpg);
-    max-width: 1200px;
-    min-width: 480px;
-    height: 400px;
   }
 }
 
@@ -713,8 +713,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero__section {
-    max-width: 1600px;
-    height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desk-x1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-x1.jpg);
   }
@@ -1043,10 +1041,6 @@ body {
   }
 }
 
-.team__img {
-  width: 100%;
-}
-
 .members__name {
   font-weight: 500;
   font-size: 16px;
@@ -1213,6 +1207,7 @@ body {
   background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .footer-main-div {
