@@ -30,6 +30,12 @@
     padding-bottom: 15px;
     padding-left: 16px;
     color: #ffffff;
+    @include mobile {
+        width: 400px;
+    }
+    @include tablet {
+        width:450px;
+    }
     @include desktop {
         width: 354px;
         

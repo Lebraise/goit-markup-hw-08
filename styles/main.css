@@ -906,7 +906,11 @@ body {
   height: 70px;
 }
 
-@media screen and (min-width: 320px) {
+.hide-work {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
   .hide-work {
     display: none;
   }
@@ -1506,6 +1510,18 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 480px) {
+  .mailing__input {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mailing__input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mailing__input {
     width: 354px;
@@ -1622,7 +1638,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .filter-btn {
     margin-bottom: 15px;
   }
