@@ -3,12 +3,19 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    padding: 0;
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+    
     
 }
 
 .company__link {
-    width: 170px;
-    height: 92px;
+    width: 130px;
+    height: 65px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
@@ -17,9 +24,9 @@
     align-items: center;
     color: #AFB1B8;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:not(:nth-child(2n)) {
-        margin-right: 0;
-    }
+    // &:not(:nth-child(2n)) {
+    //     margin-right: 0;
+    // }
     &:hover, &:focus {
         border: 1px solid var(--main-color);
         box-sizing: border-box;
@@ -29,11 +36,18 @@
     & {
         fill: currentColor;
     }
+    @include mobile {
+        width: 210px;
+        height: 92px;
+
+    }
     @include tablet {
         width: 226px;
+        height: 92px;
     }
     @include desktop {
         width: 170px;
+        height: 92px;
     }
 
 }
@@ -42,18 +56,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // &:not(:nth-child(2n)) {
-    // margin-right: 10px;
-    // }
-    flex-basis: calc((100%-30px)/2);
-    margin-bottom: 30px;
+    width: 100%;
+        flex-basis: calc((100%-180px)/6);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    @include mobile {
+        width: 100%;
+        flex-basis: calc((100%-180px)/6);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
     @include tablet {
-        flex-basis: calc((100%-30px)/3);
+        width: 100%;
+        flex-basis: calc((100%-180px)/6);
+        margin-right: 30px;
+        margin-bottom: 30px;
     }
     @include desktop {
-        flex-basis: calc((100%-30px)/6);
-        flex-wrap: nowrap;
-        margin-right: 0;
+        // width: 100%;
+        &:last-child {
+            margin-right: 30px;
+        }
     }
     
 }
