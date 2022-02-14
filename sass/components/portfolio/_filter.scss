@@ -6,13 +6,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-left: 0;
     @include tablet {
         justify-content: center;  
     }
     @include desktop {
-        justify-content: center;  
+        justify-content: center;
+        margin-bottom: 50px;  
     }
 }
 
@@ -33,7 +34,7 @@
     padding-bottom: 6px;
     padding-left: 22px;
     border: hidden;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     transition: var(--transition);
     &:active {
         background: var(--main-color);
@@ -50,6 +51,9 @@
     }
     @include mobile {
         margin-bottom: 15px;
+    }
+    @include tablet {
+        margin-bottom: 0;
     }
 }
 

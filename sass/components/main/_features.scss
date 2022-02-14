@@ -9,10 +9,12 @@
     @include tablet {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-bottom: 60px;
     }
     @include desktop {
         flex-wrap: nowrap;
         justify-content: center; 
+        margin-bottom: 94px;
     }
 
 }
@@ -20,18 +22,19 @@
 .feature__item {
     align-items: center;
     justify-content: center;
-    &:nth-last-child(-n+3) {
-        margin-bottom: 60px;
-    }
+    // &:nth-last-child(-n+3) {
+    //     margin-bottom: 60px;
+    // }
     @include tablet {
     flex-basis: calc((100% - 30px) / 2);
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     &:not(:nth-child(2n)) {
         margin-right: 30px;
+        margin-bottom: 30px;
     }
-    &:nth-last-child(-n+2) {
-        margin-bottom: 60px;
-        }
+    // &:nth-last-child(-n+2) {
+    //     margin-bottom: 60px;
+    //     }
     }
     @include desktop {
         &:not(:last-child) {

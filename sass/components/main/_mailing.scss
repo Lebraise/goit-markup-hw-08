@@ -1,6 +1,9 @@
 .mailing {
     margin-top: 60px;
     // margin-left: 93px;
+    @include tablet {
+        margin-top: 0;
+    }
     @include desktop {
         margin-top: 15px;
     }

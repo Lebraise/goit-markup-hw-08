@@ -26,10 +26,13 @@ img {
     &:hover  .project-img-text{
         transform: translateY(0);
     }
-    @media screen and (min-width:767px) and (max-width:1199px) {
+    @include tablet {
         width: 354px;
         &:not(:nth-child(2n)) {
             margin-right: 30px;
+        }
+        &:last-child {
+            margin-bottom: 0;
         }
     }
     @include desktop {

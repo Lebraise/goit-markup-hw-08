@@ -12,14 +12,15 @@
     @include tablet {
         padding-top: 26px;
         padding-bottom: 26px;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
     @include desktop {
         padding-top: 24px;
         padding-bottom: 25px;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
 }
+
 
 /* --Стилизация слова WebStudio-- */
 
@@ -42,13 +43,27 @@
     color: var(--main-color);
 }
 
+// .df {
+//     display: flex;
+// }
+
 .header__content {
     display: none;
     @include tablet {
+        width: 100%;
         display: contents;
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        justify-content: space-between;
     }
     @include desktop {
-        display: contents;
+        // display: contents;
+        // display: flex;
+        // padding-top: 24px;
+        // padding-bottom: 25px;
+        // justify-content: space-between;
     }
 }
 
@@ -135,13 +150,14 @@
 /* --Стилизация меню навигации-- */
 
 .navigation__list {
-    margin-left: 40px;
+    margin-left: 88px;
     @include tablet {
         display: flex;
         align-items: center;
         justify-content: center;
     }
     @include desktop {
+        margin-left: 93px;
         display: flex;
         justify-content: center;
         align-items: center;
